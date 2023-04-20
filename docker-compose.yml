@@ -1,0 +1,9 @@
+services:
+  python-video-streamer:
+    restart: unless-stopped
+    build:
+      context: .
+    devices:
+     - /dev/video0:/dev/video0
+    ports:
+      - "8000:8000"
