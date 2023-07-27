@@ -6,4 +6,7 @@ services:
     devices:
      - /dev/video0:/dev/video0
     ports:
-      - "8000:8000"
+      - "8081:8081"
+    environment:
+      - TZ=America/New_York
+      - PYTHONUNBUFFERED=True
